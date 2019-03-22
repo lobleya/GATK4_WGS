@@ -1,6 +1,6 @@
 #!/usr/bin/env nextflow
 
-VERSION="0.2"
+VERSION="0.3 -see OliverSI for original"
 
 log.info "===================================================================="
 log.info "GATK4 Best Practice Nextflow Pipeline (v${VERSION})                        "
@@ -11,7 +11,8 @@ if (params.help) {
   log.info " "
   log.info "USAGE: "
   log.info " "
-  log.info "nextflow run oliverSI/GATK4_Best_Practice --fastq1 read_R1.fastq.gz --fastq2 read_R2.fastq.gz"
+  log.info "nextflow run oliverSI/GATK4_Best_Practice --fastq1 read_R1.fastq.gz --fastq2 read_R2.fastq.gz --genome hg19"
+  log.info "nextflow run annaSI/GATK4_Best_Practice --bam mybam.bam --genome hg19"
   log.info " "
   log.info "Mandatory arguments:"
   log.info "    --fastq1        FILE               Fastq(.gz) file for read1"
